@@ -1,0 +1,25 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.0
+pandas==3.0.2
+scikit-learn==1.8.0
+xgboost==3.4.1
+shap>=0.44
+spacy>=3.7
+anthropic>=0.34
+openai>=1.40
+groq>=0.9   # used by app/Chatbot.py (POST /chat)
+python-multipart
+pypdf
+python-docx
+
+# Test-only dependency (used by test_api.py to generate a sample PDF in-memory
+# for testing -- NOT required to run the actual service):
+reportlab
+
+# NOTE: pandas, scikit-learn, and xgboost are pinned to the EXACT versions the
+# models in app/models/ were trained with. Pickled sklearn/xgboost models are
+# sensitive to version mismatches -- installing a different version can load
+# without error but then throw an Internal Server Error the first time a
+# prediction is actually made. Don't loosen these three without retraining
+# and re-saving the models against the new versions.

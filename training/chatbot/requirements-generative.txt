@@ -1,0 +1,7 @@
+# Only needed for the OPTIONAL flan-t5 step (train_generative.py) and for the
+# service to use the flan-t5 model if app/models/flan_t5_candidate/ exists.
+# The main chatbot needs nothing beyond the project's requirements.txt.
+torch>=2.1
+transformers>=4.40
+sentencepiece>=0.1.99
+datasets>=2.18

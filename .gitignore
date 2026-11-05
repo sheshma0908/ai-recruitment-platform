@@ -1,0 +1,9 @@
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+# Virtual environments (each person creates their own from requirements.txt)
+.venv*/
+venv/
+env/

@@ -1,0 +1,16 @@
+{
+  "raw_rows": 1620,
+  "after_cleaning": 1620,
+  "removed_restricted_roles": 0,
+  "removed_role_names": [],
+  "final_rows": 1620,
+  "job_roles": 54,
+  "topic_accuracy_unseen_roles": 1.0,
+  "role_detection_accuracy": 1.0,
+  "user_questions": 40,
+  "user_role_accuracy": 1.0,
+  "user_topic_accuracy": 1.0,
+  "user_both_correct": 1.0,
+  "dataset": "Pradeep016/career-guidance-qa-dataset",
+  "license": "CC BY 4.0"
+}
